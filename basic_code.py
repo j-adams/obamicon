@@ -7,13 +7,13 @@ lightBlue = (112, 150, 158)
 yellow = (252, 227, 166)
 
 # Import image.
-my_image = Image.open("Basketball.png") #change IMAGENAME to the path on your computer to the image you're using
+my_image = Image.open("Basketball.png") #change IMAGENAME to the path on your computer to the image you're using, here I am using a basketball image so just replace it!
 image_list = my_image.getdata() #each pixel is represented in the form (red value, green value, blue value, transparency). You don't need the fourth value.
 image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
 
 recolored = [] #list that will hold the pixel data for the new image.
 
-#YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
+#This is the code that actually changes the color of each pixel
 for pixel in image_list :
     numRed = pixel[0]
     numBlue = pixel[1]
